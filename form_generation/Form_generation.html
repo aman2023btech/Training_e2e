@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .size {
+        height: 30px;
+        display: inline-block;
+        margin: 10px;
+      }
+      .result{
+        border: 2px solid black;
+        width:  50 vw;
+        font-size: 30px;
+        background-color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+
+  <div style="background-color: aqua;">
+
+    <form onsubmit="return false;">
+      <label for="fname">Field Name</label>
+      <input class="size" type="text" id="fname" name="fname" />
+
+      <label for="fid">Field ID</label>
+      <input class="size" type="text" id="fid" name="fid" />
+
+      <label for="ftype">Field type</label>
+      <select class="size" id="ftype" name="ftype">
+        <option value="">Select One …</option>
+        <option value="text">Text</option>
+        <option value="Radio">Radio</option>
+        <option value="Checkbox">Checkbox</option>
+        <option value="Textarea">Textarea</option>
+        <option value="File">File</option>
+      </select>
+
+      
+      <div class="select">   
+      </div>
+
+      <br />
+      <input class="size submit"  style="background-color: green;" type="submit" value="submit" />
+    </form>
+
+
+    <div class="asd" style="font-size: 20px;"></div>
+    <div class="result">
+    </div>
+   <br>
+   <br>
+  </div>
+
+    <script src="./script.js"></script>
+
+  </body>
+</html>
