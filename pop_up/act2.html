@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+        width: 100%;
+        height: 100vh;
+      }
+      .grid-item {
+        text-align: left;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+      }
+      .hidden {
+        display: none;
+      }
+      .modal {
+        border: 10px solid rgb(47, 171, 144);
+        position: absolute;
+        z-index: 10;
+        width: 80vw;
+        background-color: white; /* Black w/ opacity */
+      }
+      .overlay {
+        background-color: rgba(0, 0, 0, 0.4);
+        position: fixed;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dogs</h1>
+    <p style="font-size: 30px">Aren't they cute ??</p>
+
+    <div class="overlay hidden">
+      <div class="hidden modal" style="margin: 5vw">
+        <div>
+          <h1 style="margin: 10px; display: inline-block">Man's best friend</h1>
+          <img
+            style="width: 35px; float: right"
+            class="btn"
+            src="./icon-close-button-vector-20409198.jpg"
+            alt=""
+          />
+        </div>
+        <img style="float: right; margin: 10px" src="./i.jpeg" alt="" />
+        <p style="margin: 10px; padding: 10px; width: 60vw">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
+          aliquid blanditiis ipsam velit soluta, dignissimos, in consequatur
+          dolore aliquam non excepturi magnam amet. Provident excepturi nam
+          exercitationem vel autem tenetur quo tempore quidem eaque, ipsam
+          expedita eius dolores sunt ipsa hic, quos magnam voluptatibus nemo
+          enim ex, repellendus sed! Libero, facere nihil sunt adipisci expedita
+          dolore inventore architecto aperiam vitae cupiditate mollitia
+          exercitationem est laborum deserunt fugit error excepturi magnam at
+          explicabo dignissimos. Sapiente perspiciatis corrupti soluta odit
+          commodi perferendis nulla obcaecati ab earum ducimus labore nemo
+          doloribus temporibus eos vel cumque minima, nisi magni incidunt et?
+          Quibusdam consectetur dolor, alias porro fugit voluptate perferendis
+          deleniti ducimus iure atque repellendus earum nobis, eveniet culpa
+          omnis laborum quo velit at tempore, a commodi ut! Soluta voluptates,
+          tempore quo fuga expedita delectus, praesentium officiis vero harum
+          nisi nostrum sunt saepe cupiditate unde quam perferendis explicabo
+          quidem doloribus? Harum placeat fugit, officia quod quo quidem odio
+          omnis! Est laboriosam quisquam ea recusandae, distinctio repellendus
+          iste at ipsum qui eum aliquid blanditiis, repudiandae a error iure
+          esse officiis quaerat sit. At suscipit nisi reiciendis omnis eos
+          labore ipsum odio voluptatum. Exercitationem rerum tempore aut
+          corrupti a, non omnis eveniet neque sint sequi corporis excepturi
+          vitae ex inventore ducimus ipsam, iste nam quidem magni, perferendis
+          sapiente! Cumque error, recusandae ut, rem quasi tenetur, quod iure
+          nemo placeat aspernatur ad modi expedita adipisci consequatur ipsam
+          maxime. Doloribus nam esse quas, maxime accusantium asperiores culpa
+          obcaecati eveniet odio voluptatem quasi qui rem ea reiciendis porro
+          eaque, possimus voluptate. Natus nam, iure fugit sequi quas, quaerat
+          expedita ullam ad ab pariatur aspernatur voluptas commodi? Voluptatem,
+          dolorem laboriosam sed exercitationem obcaecati deserunt possimus
+          rerum iusto ut blanditiis labore error quam esse doloribus nihil unde,
+          ducimus architecto libero, suscipit autem est aspernatur excepturi!
+          Quasi nulla odit illum ipsa enim fugiat temporibus cupiditate tempora
+          id! Adipisci ex unde saepe tempora illo fugiat reiciendis veritatis a
+          iste ducimus eveniet eius, libero doloribus vitae cupiditate inventore
+          veniam quae voluptatem optio blanditiis. Excepturi maiores architecto
+          quaerat at hic. Expedita veritatis, tenetur non architecto consequatur
+          magni qui nisi cupiditate laboriosam, harum quam totam eaque autem
+          similique, adipisci vero cum inventore. Sint dolorem error excepturi,
+          minima vero alias optio aliquid numquam? Nulla, nisi quia quaerat
+          mollitia ipsum iste provident neque saepe quae velit, dolorum quas
+          accusantium ipsam nemo quis architecto reprehenderit ex optio nihil!
+          Ab, magnam iusto voluptatum ducimus enim cumque labore repellat alias
+          tempore esse error modi atque sapiente quas nostrum velit dolorem
+          inventore. Cupiditate, temporibus nemo! Consectetur expedita inventore
+          quia! Veniam voluptatem error consequuntur cum eaque! Voluptatibus
+          ullam at nesciunt tenetur natus harum rerum eos quas. Ipsam harum
+          molestias explicabo! Ullam at dolorum illum dicta possimus eius
+          perspiciatis nostrum voluptas officiis numquam! Excepturi laborum
+          minus consequatur provident similique recusandae nulla voluptates
+          cumque tenetur alias obcaecati ea autem quaerat eius assumenda, neque
+          sapiente placeat, rerum illum officiis praesentium. Rem harum eligendi
+          ipsa, atque reiciendis necessitatibus recusandae ab explicabo nobis
+          architecto repellendus nostrum tempore iusto earum aliquam ut? Eveniet
+          quos nesciunt ullam consequatur ut consectetur esse!
+        </p>
+      </div>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-item">
+        <h4>Puppies</h4>
+        <p>Aren't they adorable??</p>
+        <img class="img1" src="./download.jpeg" alt="puppies" />
+        <p>click on this image</p>
+      </div>
+      <div class="grid-item">
+        <h4>Puppies</h4>
+        <p>Aren't they adorable??</p>
+        <img src="./download.jpeg" alt="puppies" />
+      </div>
+      <div class="grid-item">
+        <h4>Puppies</h4>
+        <p>Aren't they adorable??</p>
+        <img src="./download.jpeg" alt="puppies" />
+      </div>
+      <div class="grid-item">
+        <h4>Puppies</h4>
+        <p>Aren't they adorable??</p>
+        <img src="./download.jpeg" alt="puppies" />
+      </div>
+      <div class="grid-item">
+        <h4>Puppies</h4>
+        <p>Aren't they adorable??</p>
+        <img src="./download.jpeg" alt="puppies" />
+      </div>
+      <div class="grid-item">
+        <h4>Puppies</h4>
+        <p>Aren't they adorable??</p>
+        <img src="./download.jpeg" alt="puppies" />
+      </div>
+      <div class="grid-item">
+        <h4>Puppies</h4>
+        <p>Aren't they adorable??</p>
+        <img src="./download.jpeg" alt="puppies" />
+      </div>
+      <div class="grid-item">
+        <h4>Puppies</h4>
+        <p>Aren't they adorable??</p>
+        <img src="./download.jpeg" alt="puppies" />
+      </div>
+      <div class="grid-item">
+        <h4>Puppies</h4>
+        <p>Aren't they adorable??</p>
+        <img src="./download.jpeg" alt="puppies" />
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
