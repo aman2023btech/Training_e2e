@@ -1,0 +1,24 @@
+<!-- todo section -->
+
+<style>
+    div {
+      width: 25vw;
+      height: auto;
+    }
+  </style>
+  
+  <div>
+    <h1
+      style="
+        font-family: monospace;
+        font-size: 20;
+      "
+    >
+      TODO
+    </h1>
+  </div>
+
+  <div  *ngFor="let todo of todos">
+    <app-tiles></app-tiles>
+  </div>
+  

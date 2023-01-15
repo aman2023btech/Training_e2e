@@ -1,0 +1,59 @@
+<style>
+  .block {
+    display: block;
+  }
+  .alignleft {
+    position: relative;
+    left: 33vw;
+  }
+  input {
+    width: 40vw;
+    height: 4vh;
+  }
+  button {
+    width: auto;
+    border-radius: 3px;
+    margin: 10px;
+    height: 4vh;
+    font-size: 20px;
+  }
+  .hidden{
+    display: none;
+  }
+  .popup{
+  align-items: center;
+  width: 45vw;
+  background-color: #555;
+  color: #fff;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  left: 25vw;
+  top: 200px;
+  z-index: 1;
+}
+</style>
+
+<div style="width: 100%; height: 100%;position: absolute; z-index: 0.5; background: rgba(0, 0, 0, 0.2);" class="hidden overlay"></div>
+
+<div class="hidden popup" style="font-size: 20px">
+  <h1 style="font-size: 32px; margin: 10px;">Add Task</h1>
+
+  <form action="" style="width: 400px">
+    <div style="margin: 10px">
+      <label class="block" for="Task_Title">Task Title</label>
+      <input class="block" type="text" name="" id="Task_Title" />
+    </div>
+
+    <div style="margin: 10px">
+      <label class="block" for="Task_description">Task Description</label>
+      <input class="block" type="text" name="" id="Task_description" />
+    </div>
+
+    <div class="alignleft">
+      <button type="button" (click)="Submit_task()">Add</button>
+      <button type="button" (click)="hide_popup()">Cancel</button>
+    </div>
+  </form>
+
+</div>
