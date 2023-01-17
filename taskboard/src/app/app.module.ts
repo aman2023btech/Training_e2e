@@ -12,6 +12,7 @@ import { InprogressComponent } from './inprogress/inprogress.component';
 import { PopupComponent } from './popup/popup.component';
 import { FormsModule } from '@angular/forms';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { DragDropComponent } from './drag-drop/drag-drop.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     OnholdComponent,
     InprogressComponent,
     PopupComponent,
+    DragDropComponent,
   ],
   imports: [
     BrowserModule,
