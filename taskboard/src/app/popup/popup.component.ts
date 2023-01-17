@@ -39,7 +39,7 @@ export class PopupComponent {
   setValue(tasktitle:string, taskdesc:string) {
     this.Task= {title: tasktitle, desc: taskdesc};
     this.shared.settask(this.Task)
-    console.log(this.Task);
+   // console.log(this.Task);
   }
 
 }

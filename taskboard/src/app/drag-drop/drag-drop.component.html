@@ -1,4 +1,13 @@
-<app-todo></app-todo>
-<app-inprogress ></app-inprogress>
-<app-onhold ></app-onhold>
-<app-completed ></app-completed>
+<style>
+    .section {
+    padding: 10px;
+    display: flex;
+  }
+</style>
+
+<div class="section">
+<app-todo (tasknote)="movebox($event)" [task]="task"></app-todo>
+<app-inprogress (tasknote)="movebox($event)" [task]="task"></app-inprogress>
+<app-onhold (tasknote)="movebox($event)" [task]="task"></app-onhold>
+<app-completed (tasknote)="movebox($event)" [task]="task"></app-completed>
+</div>

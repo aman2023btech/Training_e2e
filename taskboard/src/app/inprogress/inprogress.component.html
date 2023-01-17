@@ -12,18 +12,14 @@
     }
   </style>
   
-  <div>
-    <h1
-      style="
-        font-family: monospace;
-        font-size: 20;
-      "
-    >
-      INPROGRESS
-    </h1>
-  </div>
-  
-  <div class="inprogress" *ngFor="let task of tasks">
-    <app-tiles [task]="task" (taskdelete)="deletetask($event)" ></app-tiles>
+  <div (dragover)="drop()">
+    <div>
+      <h1 style="font-family: monospace;font-size: 20;" >INPROGRESS </h1>
+    </div> 
+    
+    <div class="inprogress" *ngFor="let task of tasks">
+      <app-tiles [task]="task" (taskdelete)="deletetask($event)" (tasknote)="movebox($event)"></app-tiles>
     </div>
     
+  </div>
+

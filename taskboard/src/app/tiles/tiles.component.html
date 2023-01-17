@@ -1,31 +1,26 @@
 <!-- individusl task elements  -->
 
 <style>
-    div {
-      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
-      width: 90%;
-      border-radius: 10px;
-      margin: 10px;
-    }
-  </style>
-  
-  <div>
-    <h1>{{task.title}}</h1>
-    <p> {{task.desc}} </p>
-    <img
-      src="https://static.vecteezy.com/system/resources/previews/009/393/680/original/eye-icon-sign-symbol-design-free-png.png"
-      alt="look up"
-      width="20px"
-      class="look_up"
-    />
-    <p style="display: inline-block; width: 40 px;"></p>
-    <img
-      src="https://cdn-icons-png.flaticon.com/512/1214/1214428.png"
-      alt="delete"
-      width="20px"
-      class="delete"
-      (click)="delete_task(task)"
-    />
+  div {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    width: 90%;
+    border-radius: 10px;
+    margin: 10px;
+  }
+</style>
+
+<div draggable="true">
+  <div (mousedown)="move(task)">
+    <h1>{{ task.title }}</h1>
+    <p>{{ task.desc }}</p>
+    <p style="display: inline-block; width: 40 px"></p>
   </div>
-  
+  <img style="display: block;"
+    src="https://cdn-icons-png.flaticon.com/512/1214/1214428.png"
+    alt="delete"
+    width="20px"
+    class="delete"
+    (click)="delete_task(task)"
+  />
+</div>

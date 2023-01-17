@@ -1,31 +1,24 @@
 <!-- onhold section -->
 
 <style>
-    div {
-      width: 25vw;
-      height: auto;
-    }
+  div {
+    width: 25vw;
+    height: auto;
+  }
 
-    .onhold{
-     background-color: rgb(255, 98, 0);
-     width: 90%;
-     border-radius: 10px;
-    }
-  </style>
-  
+  .onhold {
+    background-color: rgb(255, 98, 0);
+    width: 90%;
+    border-radius: 10px;
+  }
+</style>
+
+<div (dragover)="drop()">
   <div>
-    <h1
-      style="
-        font-family: monospace;
-        font-size: 20;
-      "
-    >
-      ONHOLD
-    </h1>
+    <h1 style="font-family: monospace; font-size: 20">ONHOLD</h1>
   </div>
-  
 
   <div class="onhold" *ngFor="let task of tasks">
-    <app-tiles [task]="task" (taskdelete)="deletetask($event)"></app-tiles>
-    </div>
-    
+    <app-tiles [task]="task" (taskdelete)="deletetask($event)" (tasknote)="movebox($event)"></app-tiles>
+  </div>
+</div>
