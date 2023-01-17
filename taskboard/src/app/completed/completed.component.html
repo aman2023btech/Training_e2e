@@ -4,7 +4,11 @@
     div {
       width: 25vw;
       height: auto;
-
+    }
+    .completed{
+     background-color: aquamarine;
+     width: 90%;
+     border-radius: 10px;
     }
   </style>
   
@@ -19,3 +23,7 @@
     </h1>
   </div>
   
+  <div class="completed" *ngFor="let task of tasks">
+    <app-tiles [task]="task" (taskdelete)="deletetask($event)"></app-tiles>
+    </div>
+    

@@ -10,6 +10,9 @@ import { CompletedComponent } from './completed/completed.component';
 import { OnholdComponent } from './onhold/onhold.component';
 import { InprogressComponent } from './inprogress/inprogress.component';
 import { PopupComponent } from './popup/popup.component';
+import { FormsModule } from '@angular/forms';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+
 
 @NgModule({
   declarations: [
@@ -20,11 +23,13 @@ import { PopupComponent } from './popup/popup.component';
     CompletedComponent,
     OnholdComponent,
     InprogressComponent,
-    PopupComponent
+    PopupComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]

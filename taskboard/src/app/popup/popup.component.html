@@ -42,16 +42,16 @@
   <form action="" style="width: 400px">
     <div style="margin: 10px">
       <label class="block" for="Task_Title">Task Title</label>
-      <input class="block" type="text" name="" id="Task_Title" />
+      <input class="block" type="text" name="Task_Title" id="Task_Title"  [(ngModel)]="tasktitle"  />
     </div>
 
     <div style="margin: 10px">
       <label class="block" for="Task_description">Task Description</label>
-      <input class="block" type="text" name="" id="Task_description" />
+      <input class="block" type="text" name="Task_description" id="Task_description"   [(ngModel)]="taskdesc"/>
     </div>
 
     <div class="alignleft">
-      <button type="button" (click)="Submit_task()">Add</button>
+      <button type="button" (click)="Submit_task()"  (click)="setValue(tasktitle, taskdesc)" >Add</button>
       <button type="button" (click)="hide_popup()">Cancel</button>
     </div>
   </form>

@@ -5,6 +5,11 @@
       width: 25vw;
       height: auto;
     }
+    .inprogress{
+      background-color: yellow;
+      width: 90%;
+      border-radius: 10px;
+    }
   </style>
   
   <div>
@@ -18,3 +23,7 @@
     </h1>
   </div>
   
+  <div class="inprogress" *ngFor="let task of tasks">
+    <app-tiles [task]="task" (taskdelete)="deletetask($event)" ></app-tiles>
+    </div>
+    

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { task } from '../task'; 
 
 @Component({
@@ -8,13 +8,12 @@ import { task } from '../task';
 })
 export class TilesComponent {
 
+  @Input() task!: task;
+  @Output() taskdelete: EventEmitter<task>= new EventEmitter;
+  @Output() tasknote: EventEmitter<task>= new EventEmitter;
 
-  delete_task(){
-
-  }
-
-  look_task(){
-
+  delete_task(task: task){
+    this.taskdelete.emit(task);
   }
 
 }

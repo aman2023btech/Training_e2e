@@ -1,24 +1,22 @@
 <!-- todo section -->
 
 <style>
-    div {
-      width: 25vw;
-      height: auto;
-    }
-  </style>
-  
-  <div>
-    <h1
-      style="
-        font-family: monospace;
-        font-size: 20;
-      "
-    >
-      TODO
-    </h1>
-  </div>
+  div {
+    width: 25vw;
+    height: auto;
+  }
 
-  <div  *ngFor="let todo of todos">
-    <app-tiles></app-tiles>
-  </div>
-  
+  .todo {
+    background-color: aqua;
+    width: 90%;
+    border-radius: 10px;
+  }
+</style>
+
+<div>
+  <h1 style="font-family: monospace; font-size: 20">TODO</h1>
+</div>
+
+<div class="todo" *ngFor="let task of tasks">
+  <app-tiles [task]="task" (taskdelete)="deletetask($event)"></app-tiles>
+</div>
