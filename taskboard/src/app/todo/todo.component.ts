@@ -29,6 +29,15 @@ export class TodoComponent {
     });
   }
 
+//   push= function() {
+//     console.log('deepak');
+//     this.tasks.push(this.task);
+//   }
+
+//  add= this.push.bind(this);
+
+//   target= document.querySelector(".target").addEventListener("drop", this.add);
+
   deletetask(task: task) {
     console.log(task);
     const index = this.tasks.indexOf(task);

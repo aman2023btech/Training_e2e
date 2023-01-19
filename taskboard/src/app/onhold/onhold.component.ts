@@ -13,7 +13,7 @@ export class OnholdComponent {
   @Output() tasknote: EventEmitter<task> = new EventEmitter();
 
   constructor() {
-    this.tasks = [ {title:"task", desc:"will do later"} ];
+    this.tasks = [ {title:"task", desc:"will do later"},{}];
   }
 
   deletetask(task: task){

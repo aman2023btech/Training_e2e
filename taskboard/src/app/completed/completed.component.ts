@@ -13,7 +13,7 @@ export class CompletedComponent {
   @Output() tasknote: EventEmitter<task>= new EventEmitter;
   
   constructor() {
-    this.tasks = [  {title:"task1", desc:"done"}  ];
+    this.tasks = [  {title:"task1", desc:"done"} ,{} ];
   }
 
   deletetask(task: task){
