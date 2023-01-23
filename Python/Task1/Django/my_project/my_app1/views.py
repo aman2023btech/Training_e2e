@@ -7,3 +7,5 @@ def display_page1(request):
 
 def display_page2(request):
     return render(request, 'page2.html')
+
+
